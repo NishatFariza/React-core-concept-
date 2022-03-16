@@ -19,9 +19,9 @@ function App() {
     <Person></Person>
     <h4>New Component : YEYYYY</h4>
     <p id='newcomponent'>This is new component</p>
-    <Friend></Friend>
-    <Friend></Friend>
-    <Friend></Friend>
+    <Friend movies='Shingam' phone='0177777'></Friend>
+    <Friend phone='0183333'></Friend>
+    <Friend phone='0140000'></Friend>
     </div>
   );
 }
@@ -35,11 +35,11 @@ function Person (props){
   )
 }
 
-function Friend (){
+function Friend (props){
   return (
     <div className='container'>
-      <h1>Name: Sajid</h1>
-      <p>Job: Web Devloper</p>
+      <h1>Name: {props.movies}</h1>
+      <p>Phone: {props.phone}</p>
     </div>
   )
 }
