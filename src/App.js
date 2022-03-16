@@ -11,11 +11,15 @@ const singerStyle = {
   backgroundColor:'lightblue'
 }
 function App() {
+  const nayoks = ['Shakib', 'BappaDa', 'Kuber', 'Joshim', 'Shalman Shah', 'Riayaj', 'Razzak'];
   return (
     <div className="App">
-    <Person name="Shakib" partner="Nishat"></Person>
-    <Person name="BappaRaj" partner='seja'></Person>
-    <Person name='kuber' partner='kopila'></Person>
+      {
+        nayoks.map(nayok => <li>Name: {nayok}</li>)
+      }
+    <Person name={nayoks[0]} partner="Nishat"></Person>
+    <Person name={nayoks[1]} partner='seja'></Person>
+    <Person name={nayoks[2]} partner='kopila'></Person>
     <Person></Person>
     <h4>New Component : YEYYYY</h4>
     <p id='newcomponent'>This is new component</p>
