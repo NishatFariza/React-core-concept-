@@ -17,10 +17,13 @@ function App() {
       {
         nayoks.map(nayok => <li>Name: {nayok}</li>)
       }
-    <Person name={nayoks[0]} partner="Nishat"></Person>
+      {
+        nayoks.map(nayok => <person name= {nayok}></person>)
+      }
+    {/* <Person name={nayoks[0]} partner="Nishat"></Person>
     <Person name={nayoks[1]} partner='seja'></Person>
     <Person name={nayoks[2]} partner='kopila'></Person>
-    <Person></Person>
+    <Person></Person> */}
     <h4>New Component : YEYYYY</h4>
     <p id='newcomponent'>This is new component</p>
     <Friend movies='Shingam' phone='0177777'></Friend>
